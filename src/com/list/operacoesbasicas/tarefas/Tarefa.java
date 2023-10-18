@@ -1,4 +1,4 @@
-package com.list.operacoesBasicas;
+package com.list.operacoesbasicas.tarefas;
 
 public class Tarefa {
     //atributo
@@ -10,6 +10,11 @@ public class Tarefa {
     }
 
     public String getDescricao() {
+        return descricao;
+    }
+
+    @Override
+    public String toString() {
         return descricao;
     }
 

@@ -1,4 +1,4 @@
-package com.list.operacoesBasicas;
+package com.list.operacoesbasicas.tarefas;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,6 +37,22 @@ public class ListaTarefa {
     //Retorna uma lista contendo a descrição de todas as tarefas na lista.
     public void obterDescricoesTarefas() {
         System.out.println(tarefaList);
+    }
+
+    public static void main(String[] args) {
+        ListaTarefa listaTarefa = new ListaTarefa();
+        
+        
+        listaTarefa.adicionarTarefa("Tarefa 1");
+        listaTarefa.adicionarTarefa("Tarefa 2");
+        listaTarefa.adicionarTarefa("Tarefa 3");
+
+        System.out.println("O número total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
+
+        listaTarefa.removerTarefa("Tarefa 1");
+        System.out.println("O número total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
+
+        listaTarefa.obterDescricoesTarefas();
     }
 
 }
