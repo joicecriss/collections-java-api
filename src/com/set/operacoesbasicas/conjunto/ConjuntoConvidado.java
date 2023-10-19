@@ -3,8 +3,6 @@ package com.set.operacoesbasicas.conjunto;
 import java.util.HashSet;
 import java.util.Set;
 
-import javax.print.DocFlavor.READER;
-
 public class ConjuntoConvidado {
     //atributo
     private Set<Convidado> convidadoSet;
